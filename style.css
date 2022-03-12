@@ -1,0 +1,52 @@
+body {
+  padding: 1rem;
+  background-color: #ddd;
+}
+.d-flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+@media (min-width: 768px) {
+  .d-flex {
+    flex-direction: column;
+  }
+}
+
+.card {
+  background-color: #fff;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 0 0 2px rgb(255 255 255), 0.3em 0.3em 1em rgb(0 0 0 / 30%);
+  margin-right: 30px;
+}
+
+.card:last-child {
+  margin-right: 0;
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-header-title {
+  display: flex;
+  align-items: center;
+}
+
+.card-header-title p {
+  margin: 0;
+}
+
+.card-header-title h2 {
+  margin: 0;
+  margin-left: 5px;
+}
+
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+}
